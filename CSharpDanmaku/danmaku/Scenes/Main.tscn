@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://danmaku/Scenes/UI/Editor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://danmaku/Scenes/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://danmaku/Scripts/Main.cs" type="Script" id=4]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 4 )
+_emitterPath = "res://danmaku/Scenes/EditableEmitter.tscn"
+_tabPath = "res://danmaku/Scenes/UI/Tabs.tscn"
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+
+[node name="UI" parent="." instance=ExtResource( 2 )]
